@@ -1,7 +1,12 @@
 body {
-    background-image: url("Gemini_Generated_Image_r9tyf4r9tyf4r9ty.png");
+    background-image: url("/Mini-Os/assets/wallpapers/background_Os.png");
     background-repeat: no-repeat;   
-     background-size: cover;  
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
 

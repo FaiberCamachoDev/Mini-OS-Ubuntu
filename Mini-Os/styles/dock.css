@@ -1,0 +1,47 @@
+
+.ubuntu-dock {
+    position: fixed;
+    top: 53%;
+    height: 100vh;
+    width: 60px;
+    transform: translateY(-50.15%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 15px 0px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+.dock-icon {
+    position: relative;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dock-icon .hover-bg {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 12px; 
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+}
+.dock-icon img {
+    width: 90px;
+    height: 45px;
+    z-index: 2;
+    transition: 0.2s ease-in-out;
+}
+.dock-icon:hover .hover-bg {
+    opacity: 1;
+}
+
