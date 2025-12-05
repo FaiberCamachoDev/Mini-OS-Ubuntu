@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="/Mini-Os/styles/calculator.css">
+    
+</head>
+<body class="body-calculator">
+    <h1 class="calculator-h1">CALCULATOR</h1>
+   <div class="container">
+    <div id="operacionRealizada">0</div>
+    <div id="textResultado"></div>
+
+    <div class="fila">
+        <button class="tecla" onclick="limpiar()">AC</button>
+        <button class="tecla" onclick="borrarUltimo()">C</button>
+        <button class="tecla" onclick="operador('(')">(</button>
+        <button class="tecla" onclick="operador(')')">)</button>
+    </div>
+    <div class="fila">
+        <button class="tecla funcion" onclick="potencia()">x²</button>
+        <button class="tecla funcion" onclick="raiz()">√</button>
+        <button class="tecla funcion" onclick="porcentaje()">%</button>
+        <button class="tecla" onclick="operacion('/')">/</button>
+        
+    </div>
+    <div class="fila">
+        <button class="tecla" onclick="operador('7')">7</button>
+        <button class="tecla" onclick="operador('8')">8</button>
+        <button class="tecla" onclick="operador('9')">9</button>
+        <button class="tecla" onclick="operacion('*')">X</button>
+    </div>
+    <div class="fila">
+        <button class="tecla" onclick="operador('4')">4</button>
+        <button class="tecla" onclick="operador('5')">5</button>
+        <button class="tecla" onclick="operador('6')">6</button>
+        <button class="tecla" onclick="operacion('-')">-</button>
+    </div>
+    <div class="fila">
+        <button class="tecla" onclick="operador('1')">1</button>
+        <button class="tecla" onclick="operador('2')">2</button>
+        <button class="tecla" onclick="operador('3')">3</button>
+        <button class="tecla" onclick="operacion('+')">+</button>
+        
+    </div>
+    <div class="fila">
+        <button class="tecla" onclick="cambiarSigno()">±</button>
+        <button class="tecla" onclick="operador('0')">0</button>
+        <button class="tecla" onclick="operador('.')">.</button>
+        <button class="tecla funcion" onclick="calculo()">=</button>
+    </div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
