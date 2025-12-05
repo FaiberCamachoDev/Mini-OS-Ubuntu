@@ -1,0 +1,36 @@
+.body-notepad {
+    background-color: #f0f0f0ee;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.header_note{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+.note_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.note_textarea {
+    width: 80%;
+    height: 900px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    resize: none;
+}
+input.note-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f179e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
