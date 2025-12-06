@@ -1,21 +1,54 @@
 
 .ubuntu-dock {
     position: fixed;
-    top: 54.3%;
-    height: 100vh;
+    top: 0;                 
+    left: 0;
+    height: 100vh;          
     width: 60px;
-    transform: translateY(-50.15%);
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; 
     align-items: center;
+
     background: rgba(20, 20, 20, 0.6);
     backdrop-filter: blur(10px);
-    padding: 15px 0px;
-    padding-top: 100px;
-    padding-bottom: 20px;
+    padding: 45px 0;       
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-    overflow: hidden;
+    z-index: 500;
+}
+.dock-icon-ubuntu {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dock-icon-ubuntu img {
+    width: 45px;
+    height: 45px;
+    z-index: 2;
+    transition: 0.2s ease-in-out;
+    filter: brightness(0) invert(1);
+}
+.dock-icon-ubuntu:hover .hover-bg {
+    opacity: 1;
+}
+.dock-icon-ubuntu .hover-bg {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 12px; 
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+}
+.dock-spacer {
+    flex-grow: 1;
+}
+.dock-bottom {
+    margin-bottom: 20px;
 }
 .dock-icon {
     position: relative;
@@ -24,6 +57,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 .dock-icon .hover-bg {
     position: absolute;

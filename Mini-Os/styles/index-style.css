@@ -16,7 +16,7 @@ body {
 /* Barra Ubuntu */
 .ubuntu-bar {
     height: 4%;
-    background-color: #2C2C2C; /* color real */
+    background-color: #2C2C2C;
     color: white;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -26,6 +26,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.3px;
     margin: none;
+    z-index: 1000;
 }
 
 /* Centro (hora) */
