@@ -1,0 +1,18 @@
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: 50%;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: 50%;
+}
+
+.semi-contenedor{
+    display: 205%;
+    justify-content: space-evenly;
+    align-content: stretch;
+    flex-direction: row-reverse;
+    flex-wrap: 79%;
+    align-items: stretch;
+}
+
