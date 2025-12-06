@@ -1,6 +1,6 @@
 body {
-    background-image: url("/Mini-Os/assets/wallpapers/background_Os.png");
-    background-repeat: no-repeat;   
+    background-image: url("../assets/wallpapers/background_Os.png");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -11,9 +11,10 @@ body {
 
 
 
+
 /* Barra Ubuntu */
 .ubuntu-bar {
-    height: 28px;
+    height: 4%;
     background-color: #2C2C2C; /* color real */
     color: white;
     display: grid;
@@ -23,6 +24,7 @@ body {
     font-family: "Ubuntu", sans-serif;
     font-size: 14px;
     letter-spacing: 0.3px;
+    margin: none;
 }
 
 /* Centro (hora) */
