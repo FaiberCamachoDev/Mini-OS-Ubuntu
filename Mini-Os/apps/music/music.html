@@ -3,15 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
     <title>Music Player Mini-Ubuntu</title>
-    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="/Mini-Os/styles/music.css">
 </head>
-<body>
-    <div class="music-player">
-        <h3 class="song-title">APT</h3>
-        <audio src=""></audio>
 
+<body>
+
+    <div class="container">
+
+        <div class="music-player">
+            <img src="APT.jpg" alt="cover">
+
+            <h3 class="song-title">APT. ROSÉ & Bruno Mars</h3>
+
+            <audio controls class="audio">
+                <source src="APT.   ROSÉ   Bruno Mars.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="controls">
+            <button class="button">
+                <svg viewbox="0 0 24 24"><path d="M16 5v14h-2V5h2Zm-3 7L4 19V%l9 7Z"><path></svg>     
+            </button>
+        </div>
     </div>
-    
+
+    <h2 class="playlist-title">Playlist</h2>
+
+        <ul class="playlist">
+
+            <li class="song-item">
+                <img src="cheek.jpg" class="song-cover">
+                <div>
+                    <p class="song-name">Cheek to Cheek</p>
+                    <span class="song-artist">Ella Fitzgerald</span>
+                </div>
+                <span class="album">Ella and Louis</span>
+            </li>
+
+            <li class="song-item">
+                <img src="chop.jpg" class="song-cover">
+                <div>
+                    <p class="song-name">Chop Suey!</p>
+                    <span class="song-artist">System of A Down</span>
+                </div>
+                <span class="album">Toxicity (2001)</span>
+            </li>
+
+            <li class="song-item">
+                <img src="push.jpg" class="song-cover">
+                <div>
+                    <p class="song-name">PUSH 2 START</p>
+                    <span class="song-artist">Tyla</span>
+                </div>
+                <span class="album">Tyla (Deluxe)</span>
+            </li>
+
+            <li class="song-item">
+                <img src="quiereme.jpg" class="song-cover">
+                <div>
+                    <p class="song-name">Quiereme asi</p>
+                    <span class="song-artist">Nanpa</span>
+                </div>
+                <span class="album">HECHO M13RD4</span>
+            </li>
+
+            <li class="song-item">
+                <img src="3am.jpg" class="song-cover">
+                <div>
+                    <p class="song-name">3am</p>
+                    <span class="song-artist">ROSÉ</span>
+                </div>
+                <span class="album">ROSIE</span>
+            </li>
+
+            <li class="song-item">
+                <img src="sys.jpg" class="song-cover">
+                <div>
+                    <p class="song-name">Toxicity</p>
+                    <span class="song-artist">System of A Down</span>
+                </div>
+                <span class="album">Toxicity (2001)</span>
+            </li>
+
+            <li class="song-item">
+                <img src="paz.jpg" class="song-cover">
+                <div>
+                    <p class="song-name">Paz mental</p>
+                    <span class="song-artist">Nanpa Basico</span>
+                </div>
+                <span class="album">Single</span>
+            </li>
+
+            <li class="song-item">
+                <img src="dream.jpg" class="song-cover">
+                <div>
+                    <p class="song-name">Dream a little dream of me</p>
+                    <span class="song-artist">Ella Fitzgerald</span>
+                </div>
+                <span class="album">Ella And Louis</span>
+            </li>
+        </ul>
+    </div>
+
 </body>
 </html>
