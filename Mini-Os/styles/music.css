@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2F343F;
+    color: rgb(255, 255, 255);
+    font-family: "Cinzel", serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    width: 600px;
+}
+
+/* Player */
+.music-player {
+    background: rgba(21, 22, 23, 0.656);
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cover {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.song-title {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.audio {
+    width: 100%;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button svg {
+    width: 28px;
+    height: 28px;
+    fill: rgb(203, 46, 46);
+    opacity: 0.8;
+}
+
+.button:hover svg {
+    opacity: 1;
+}
+
+/* Playlist */
+.playlist-title {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.playlist {
+    list-style: none;
+    padding: 0;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 10px;
+    background: rgba(63, 77, 93, 0.505);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.song-cover {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.song-name {
+    font-size: 18px;
+    margin: 0;
+}
+
+.song-artist {
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.album {
+    font-size: 10px;
+    opacity: 0.6;
+}
