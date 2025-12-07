@@ -9,10 +9,68 @@ body {
     color: rgb(255, 255, 255);
     font-family: "Cinzel", serif;
     display: flex;
-    justify-content: center;
+    justify-content: column;
     padding: 40px;
+    align-items: center;
 }
 
+.top-bar {
+    width: 90%;
+    background-color: #3b4049;
+    height: 45px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.player-window {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    left: 15px;
+}
+
+.button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.close {background-color: #ff5f57;}
+.minimize {background-color: #ffbd2e;}
+.maximize {background-color: #28c840;}
+
+.app-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Exit */
+.exit-x {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    color: white;
+    background-color: #e95420;
+    padding: 4px 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.exit-x:hover {
+    background-color: #1e222a;
+}
+
+/* Container */
 .container {
     width: 600px;
 }
@@ -22,7 +80,6 @@ body {
     background: rgba(21, 22, 23, 0.656);
     padding: 20px;
     border-radius: 20px;
-    backdrop-filter: blur(10px);
     text-align: center;
     margin-bottom: 40px;
 }
@@ -75,7 +132,7 @@ body {
 
 .playlist {
     list-style: none;
-    padding: 0;
+    width: 600px;
 }
 
 .song-item {
@@ -97,7 +154,6 @@ body {
 
 .song-name {
     font-size: 18px;
-    margin: 0;
 }
 
 .song-artist {

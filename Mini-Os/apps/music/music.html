@@ -3,19 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Sources necessary for the operation of the code head-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
-    <title>Music Player Mini-Ubuntu</title>
+
+<!--Enable the x icon-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <!--css import-->
     <link rel="stylesheet" href="/Mini-Os/styles/music.css">
+    <title>Music Player Mini-Ubuntu</title>
 </head>
+
 
 <body>
 
-    <div class="container">
+<!--Bar buttons-->
+<header class="top-bar">
+    <div class="player-window">
+        <span class="button close"></span>
+        <span class="button minimize"></span>
+        <span class="button maximize"></span>
+    </div>
+<!--Music title and output enable x-->
+    <h1 class="app-title">MUSIC</h1>
 
+    <a href="/Mini-Os/index.html" class="exit-x"><span class="material-symbols-outlined">close</span></a>
+</header>
+
+<!--Container function-->
+    <div class="container">
+        
+        <!--Container information-->
         <div class="music-player">
-            <img src="APT.jpg" alt="cover">
+            <img src="APT.jpg" alt="cover" class="cover" class="cover">
 
             <h3 class="song-title">APT. ROSÉ & Bruno Mars</h3>
 
@@ -23,15 +44,20 @@
                 <source src="APT.   ROSÉ   Bruno Mars.mp3" type="audio/mp3">
             </audio>
         </div>
-
+        
+        <!--Control buttons-->
         <div class="controls">
             <button class="button">
-                <svg viewbox="0 0 24 24"><path d="M16 5v14h-2V5h2Zm-3 7L4 19V%l9 7Z"><path></svg>     
+                <svg viewbox="0 0 24 24">
+
+                <path d="M16 5v14h-2V5h2Zm-3 7L4 19V%l9 7Z"><path></svg>     
             </button>
         </div>
     </div>
 
-    <h2 class="playlist-title">Playlist</h2>
+    <!--Playlist simulator-->
+    <div>
+        <h2 class="playlist-title">Playlist</h2>
 
         <ul class="playlist">
 
