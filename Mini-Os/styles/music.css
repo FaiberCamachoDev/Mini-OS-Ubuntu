@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2F343F;
+    color: rgb(255, 255, 255);
+    font-family: "Cinzel", serif;
+    display: flex;
+    justify-content: column;
+    padding: 40px;
+    align-items: center;
+}
+
+.top-bar {
+    width: 90%;
+    background-color: #3b4049;
+    height: 45px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.player-window {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    left: 15px;
+}
+
+.button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.close {background-color: #ff5f57;}
+.minimize {background-color: #ffbd2e;}
+.maximize {background-color: #28c840;}
+
+.app-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Exit */
+.exit-x {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    color: white;
+    background-color: #e95420;
+    padding: 4px 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.exit-x:hover {
+    background-color: #1e222a;
+}
+
+/* Container */
+.container {
+    width: 600px;
+}
+
+/* Player */
+.music-player {
+    background: rgba(21, 22, 23, 0.656);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cover {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.song-title {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.audio {
+    width: 100%;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button svg {
+    width: 28px;
+    height: 28px;
+    fill: rgb(203, 46, 46);
+    opacity: 0.8;
+}
+
+.button:hover svg {
+    opacity: 1;
+}
+
+/* Playlist */
+.playlist-title {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.playlist {
+    list-style: none;
+    width: 600px;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 10px;
+    background: rgba(63, 77, 93, 0.505);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.song-cover {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.song-name {
+    font-size: 18px;
+}
+
+.song-artist {
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.album {
+    font-size: 10px;
+    opacity: 0.6;
+}
