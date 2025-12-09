@@ -1,5 +1,5 @@
 body {
-    background-image: url("../assets/wallpapers/background_Os.png");
+    background-image: url("/Mini-Os/assets/wallpapers/background_Os.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    cursor: url("../assets/icons/icon-fock.png") 0 0, auto;
+    cursor: url("/Mini-Os/assets/icons/icon-fock.png") 0 0, auto;
 }
 
 
