@@ -1,4 +1,4 @@
-                    MINI OS UBUNTU
+                    **MINI OS UBUNTU**
 __________________________________________________________
 PROJECT DESCRIPTION
 
