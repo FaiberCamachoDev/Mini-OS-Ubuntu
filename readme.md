@@ -57,3 +57,5 @@ This project was created for **educational purposes**, focused on learning:
 - Frontend development basics  
 
 ---
+## Developed By:
+Faiber Andres Camacho, .....
