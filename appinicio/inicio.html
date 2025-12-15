@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="inicio_stylis.css">
+</head>
+<body>
+    <div class="svg-loader">
+    <svg class="svg-container" height="100" width="100" viewBox="0 0 100 100">
+        <circle class="loader-svg bg" cx="50" cy="50" r="45"></circle>
+        <circle class="loader-svg animate" cx="50" cy="50" r="45"></circle>
+    </svg>
+
+    <!-- Con esto podremos dirigir esta pagina en 5 segundos al inicio -->
+    <script>
+        setTimeout(() => {
+        window.location.href = "";
+    }, 5000);
+    </script>
+
+</div>
+</body>
+</html>
