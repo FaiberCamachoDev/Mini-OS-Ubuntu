@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="inicio_stylis.css">
+    <link rel="stylesheet" href="estilos_login.css">
 </head>
-<body>
-    <div class="imagen-usuario"></div>
-    <div class="imagen-usuario"></div>
-    <div class="imagen-usuario"></div>
-    
+<body class="inicio">
     <div class="svg-loader">
     <svg class="svg-container" height="100" width="100" viewBox="0 0 100 100">
         <circle class="loader-svg bg" cx="50" cy="50" r="45"></circle>
@@ -18,11 +14,11 @@
     </svg>
     </div>
 
-    <!-- Con esto podremos dirigir esta pagina en 5 segundos al inicio -->
     <script>
         setTimeout(() => {
-        window.location.href = "";
-    }, 8000);
+            console.log("Redirigiendo a interfaz.html");
+            window.location.href = "./interfaz.html";
+        }, 8000);
     </script>
 
 </body>
